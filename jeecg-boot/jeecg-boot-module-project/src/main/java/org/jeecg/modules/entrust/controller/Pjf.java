@@ -10,6 +10,6 @@ package org.jeecg.modules.entrust.controller;/*
 
 public class Pjf {
     public static void main(String[] args) {
-        System.out.println("11123");
+        System.out.println("111234");
     }
 }
