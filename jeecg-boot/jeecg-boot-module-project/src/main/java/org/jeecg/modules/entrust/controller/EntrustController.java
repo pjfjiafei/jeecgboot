@@ -67,7 +67,7 @@ public class EntrustController {
 	 * @param req
 	 * @return
 	 */
-	@AutoLog(value = "委托单信息-分页列表查询")
+	@AutoLog(value = "委托单信息-分页列表查询 ")
 	@ApiOperation(value="委托单信息-分页列表查询", notes="委托单信息-分页列表查询")
 	@GetMapping(value = "/list")
 	public Result<?> queryPageList(Entrust entrust,
