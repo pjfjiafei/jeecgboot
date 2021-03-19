@@ -9,4 +9,7 @@ package org.jeecg.modules.entrust.controller;/*
  */
 
 public class Pjf {
+    public static void main(String[] args) {
+
+    }
 }
