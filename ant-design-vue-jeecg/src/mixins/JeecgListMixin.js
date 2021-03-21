@@ -190,13 +190,19 @@ export const JeecgListMixin = {
         });
       }
     },
-    handleDelete: function (id) {
+    handleDelete: function (row) {
       if(!this.url.delete){
         this.$message.error("请设置url.delete属性!")
         return
       }
+      console.log("rowrow",row)
+      if (row.status === '1') {
+        this.$message.error("已受理委托单无法删除")
+        return
+      }
+
       var that = this;
-      deleteAction(that.url.delete, {id: id}).then((res) => {
+      deleteAction(that.url.delete, {id: row.id}).then((res) => {
         if (res.success) {
           that.$message.success(res.message);
           that.loadData();
